@@ -17,7 +17,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
-    "node-notifier": "^5.1.2",
-    "node-notifyer": "^1.0.0"
+    "node-notifier": "^5.1.2"
   }
 }
