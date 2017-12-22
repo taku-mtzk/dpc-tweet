@@ -11,12 +11,16 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.19.0",
-    "browsersync": "0.0.1-security",
-    "gulp": "^3.9.1",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-changed": "^3.1.1",
     "gulp-csscomb": "^3.0.8",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
-    "gulp-watch": "^4.3.11",
-    "node-notifier": "^5.1.2"
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.11"
   }
 }
