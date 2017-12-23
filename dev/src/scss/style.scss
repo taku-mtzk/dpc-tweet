@@ -8,3 +8,17 @@
 @import "foundation/**";
 @import "layout/**";
 @import "object/**";
+
+// Import of Noto Sans
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+// Direct Styling
+body {
+  font-size: 62.5%;
+  color: #313131;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+i {
+  color: $twitter;
+}

@@ -1,0 +1,16 @@
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 7px;
+  margin-left: 50px;
+  color: $gray;
+}
+
+.title:first-child {
+  margin-top: 25px;
+}
+
+.output-box .title {
+  margin: 50px 0 0;
+  text-align: center;
+}

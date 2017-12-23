@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  padding: 10px 30px;
+  color: $gray;
+  background-color: transparent;
+  border: 1px solid $gray;
+  cursor: pointer;
+  transition: all .3s;
+}
+.btn:hover {
+    background-color: $gray;
+    color: #fff;
+}

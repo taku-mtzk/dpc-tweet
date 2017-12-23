@@ -4,34 +4,40 @@
   <meta charset="UTF-8">
   <title>DPC Tweet</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./img/favicon.jpg">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
   <div class="bg">
     <div class="input-box">
-      <p class="title">活動日：</p><br>
-      <input type="text" class="input"><br>
-      <p class="title">活動時間：</p><br>
-      <input type="text" class="input"><br>
-      <p class="title">活動場所：</p><br>
-      <input type="text" class="input"><br>
-      <p class="title">活動内容：</p><br>
-      <input type="text" class="input"><br>
-      <button type="button" class="btn"></button>
+      <form id="tweet" action="" accept-charset="utf-8">
+        <p class="title">活動日</p>
+        <input type="text" id="input-date" class="input" placeholder="11月11日"><br>
+        <p class="title">活動時間</p>
+        <input type="text" id="input-time" class="input" placeholder="11:00〜18:00"><br>
+        <p class="title">活動場所</p>
+        <input type="text" id="input-place" class="input" placeholder="E09教室"><br>
+        <p class="title">活動内容<span class="u-small">（改行は&lt;br&gt;）</span></p>
+        <input type="text" id="input-desc" class="input" placeholder="本日は通常通り、リングゲームを予定しています。<br>ぜひご参加くださいませ！"><br>
+        <button type="button" id="convert-btn">ツイートを作成</button>
+      </form>
     </div>
 
     <div class="output-box">
-      <p class="title"></p>
-      <p class="tweet-contents">
-      <!-- ツイート内容、ここから -->
-        【<span id="date">12月11日</span>の活動について】<br>
-        活動時間：<span id="time">13:00〜15:00</span><br>
-        活動場所：<span id="place">E09教室</span><br>
-        活動内容：<span id="desc">
-                    本日は通常通り、リングゲームを予定しています。<br>
-                    ぜひご参加くださいませ！
-                  </span>
-      </p>
-      <!-- ツイート内容、ここまで -->
+      <p class="title"><i class="ion-social-twitter"></i> ツイート内容<span class="u-small">（文字数：<span id="count">81</span>字/140字）</span></p>
+      <div class="tweet-contents-box">
+        <p id="tweet-contents">
+          【<span id="output-date">11月11日</span>の活動について】<br>
+          活動時間：<span id="output-time">11:00〜18:00</span><br>
+          活動場所：<span id="output-place">E09教室</span><br>
+          活動内容：<br>
+                    <span id="output-desc">
+                      本日は通常通り、リングゲームを予定しています。<br>
+                      ぜひご参加くださいませ！
+                    </span>
+        </p>
+      </div>
+      <button type="button" id="copy-btn">クリップボードにコピー</button>
     </div>
   </div>
 </body>

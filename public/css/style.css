@@ -1,4 +1,4 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');html,
 body,
 div,
 span,
@@ -128,9 +128,62 @@ select
 {
     vertical-align: middle;
 }.bg
-{width: 100%;height: 100vh;
+{width: 100%;height: 100vh;padding: 1px;
 
-    background-image: url(../img/bg.jpg);background-repeat: no-repeat;background-position: 50% 50%;background-size: cover;
+    background-image: url(../img/bg.jpg);background-repeat: no-repeat;background-attachment: fixed;background-position: 50% 50%;background-size: cover;
+}.btn,
+#convert-btn,
+#copy-btn
+{font-weight: bold;
+
+    display: block;margin: 0 auto;padding: 10px 30px;cursor: pointer;transition: all .3s;color: #193441;border: 1px solid #193441;background-color: transparent;
+}.btn:hover,
+#convert-btn:hover,
+#copy-btn:hover
+{color: #fff;
+    background-color: #193441;
+}.c-box,
+.input-box,
+.output-box
+{width: 420px;height: 400px;
+    margin: 50px auto;padding-top: 1px;background-image: url(../img/paper-texture.png);background-repeat: repeat;background-position: 50% 50%;box-shadow: 5px 5px 10px rgba(0,0,0,.8);
+}#convert-btn
+{
+    margin-top: 15px;
+}#copy-btn
+{
+    margin-top: 30px;
+}.input
+{display: block;width: 300px;margin: 7px auto 0;padding: 10px;color: #193441;
+    border: 0;border: solid 1px #193441;
+}.output-box
+{
+    position: relative;
+}.title
+{
+    font-size: 1rem;font-weight: bold;margin-top: 7px;margin-left: 50px;color: #193441;
+}.title:first-child
+{
+    margin-top: 25px;
+}.output-box .title
+{
+    margin: 50px 0 0;text-align: center;
+}.tweet-contents-box
+{
+    width: 300px;height: 220px;margin: 15px auto;border: 1px solid #193441;background-color: #fff;
+}#tweet-contents
+{font-size: 12px;line-height: 1.5;
+
+    padding: 10px;
+}.u-small
+{
+    font-size: 8px;
+}body
+{font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;color: #313131;
+}i
+{
+    color: #00aced;
 }
 
 /*# sourceMappingURL=style.css.map */
