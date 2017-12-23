@@ -10,35 +10,34 @@
 <body>
   <div class="bg">
     <div class="input-box">
-      <form id="tweet" action="" accept-charset="utf-8">
-        <p class="title">活動日</p>
-        <input type="text" id="input-date" class="input" placeholder="11月11日"><br>
-        <p class="title">活動時間</p>
-        <input type="text" id="input-time" class="input" placeholder="11:00〜18:00"><br>
-        <p class="title">活動場所</p>
-        <input type="text" id="input-place" class="input" placeholder="E09教室"><br>
-        <p class="title">活動内容<span class="u-small">（改行は&lt;br&gt;）</span></p>
-        <input type="text" id="input-desc" class="input" placeholder="本日は通常通り、リングゲームを予定しています。<br>ぜひご参加くださいませ！"><br>
-        <button type="button" id="convert-btn">ツイートを作成</button>
-      </form>
+      <p class="title">活動日</p>
+      <input type="text" id="inputDate" class="input" placeholder="11月11日"><br>
+      <p class="title">活動時間</p>
+      <input type="text" id="inputTime" class="input" placeholder="11:00〜18:00"><br>
+      <p class="title">活動場所</p>
+      <input type="text" id="inputPlace" class="input" placeholder="E09教室"><br>
+      <p class="title">活動内容<span class="u-small">（改行は&lt;br&gt;）</span></p>
+      <input type="text" id="inputDesc" class="input" placeholder="本日は通常通り、リングゲームを予定しています。<br>ぜひご参加くださいませ！"><br>
+      <button type="button" id="convertBtn">ツイートを作成</button>
     </div>
 
     <div class="output-box">
       <p class="title"><i class="ion-social-twitter"></i> ツイート内容<span class="u-small">（文字数：<span id="count">81</span>字/140字）</span></p>
       <div class="tweet-contents-box">
-        <p id="tweet-contents">
-          【<span id="output-date">11月11日</span>の活動について】<br>
-          活動時間：<span id="output-time">11:00〜18:00</span><br>
-          活動場所：<span id="output-place">E09教室</span><br>
+        <p id="tweetContents">
+          【<span id="outputDate">11月11日</span>の活動について】<br>
+          活動時間：<span id="outputTime">11:00〜18:00</span><br>
+          活動場所：<span id="outputPlace">E09教室</span><br>
           活動内容：<br>
-                    <span id="output-desc">
+                    <span id="outputDesc">
                       本日は通常通り、リングゲームを予定しています。<br>
                       ぜひご参加くださいませ！
                     </span>
         </p>
       </div>
-      <button type="button" id="copy-btn">クリップボードにコピー</button>
+      <button type="button" id="copyBtn">クリップボードにコピー</button>
     </div>
   </div>
+<script src="./js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

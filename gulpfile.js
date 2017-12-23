@@ -79,14 +79,15 @@ gulp.task('watch', (done) => {
     done()
   }
   gulp.watch(path.src + `**/*.html`, gulp.parallel('html'))
+  gulp.watch(path.src + `js/**/*.js`, gulp.parallel('js'))
   gulp.watch(path.src + `**/*.pug`, gulp.parallel('pug'))
-  gulp.watch(path.src + `**/*.scss`, gulp.parallel('sass'))
+  gulp.watch(path.src + `scss/**/*.scss`, gulp.parallel('sass'))
   gulp.watch(path.src + `img/**/*`, gulp.parallel('img'))
   gulp.watch(path.src + `assets/**/*`, gulp.parallel('assets'))
   gulp.watch([path.dist + `**/*.html`, path.dist + `**/*.css`], browserReload)
 })
 
 gulp.task("default", gulp.series(
-  gulp.parallel('html', 'sass', 'img', 'assets'),
+  gulp.parallel('html','js', 'sass', 'img', 'assets'),
   "serve","watch"))
 
