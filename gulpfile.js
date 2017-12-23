@@ -25,7 +25,7 @@ const plumberOption = {
 // Task
 gulp.task('serve', (done) => {
   const browserSyncOption = {
-    server: path.dest
+    server: path.dist
   }
 
   browserSync.init(browserSyncOption)

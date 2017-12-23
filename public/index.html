@@ -3,8 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>DPC Tweet</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="dpc">aaaaaｄふぁｓｋｊｆだｓテストあて</div>
+  <div class="bg">
+    <div class="input-box">
+      <p class="title">活動日：</p><br>
+      <input type="text" class="input"><br>
+      <p class="title">活動時間：</p><br>
+      <input type="text" class="input"><br>
+      <p class="title">活動場所：</p><br>
+      <input type="text" class="input"><br>
+      <p class="title">活動内容：</p><br>
+      <input type="text" class="input"><br>
+      <button type="button" class="btn"></button>
+    </div>
+
+    <div class="output-box">
+      <p class="title"></p>
+      <p class="tweet-contents">
+      <!-- ツイート内容、ここから -->
+        【<span id="date">12月11日</span>の活動について】<br>
+        活動時間：<span id="time">13:00〜15:00</span><br>
+        活動場所：<span id="place">E09教室</span><br>
+        活動内容：<span id="desc">
+                    本日は通常通り、リングゲームを予定しています。<br>
+                    ぜひご参加くださいませ！
+                  </span>
+      </p>
+      <!-- ツイート内容、ここまで -->
+    </div>
+  </div>
 </body>
 </html>
