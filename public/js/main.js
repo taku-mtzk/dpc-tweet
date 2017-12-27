@@ -24,12 +24,13 @@ convertBtn.onclick = function () {
   count.innerHTML = results;
 };
 
-
 copyBtn.onclick = function () {
   const copyTarget = document.getElementById('tweetContents');
   const range = document.createRange();
+  const selection = window.getSelection();
   range.selectNode(copyTarget);
-  window.getSelection().addRange(range);
+  selection.removeAllRanges();
+  selection.addRange(range);
 
   document.execCommand('copy');
 };
