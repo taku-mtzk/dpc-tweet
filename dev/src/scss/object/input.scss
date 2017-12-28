@@ -3,7 +3,10 @@
   padding: 10px;
   color: $gray;
   border:solid 1px $gray;
-  width:300px;
+  width: $input-width-pc;
   margin:7px auto 0;
   display: block;
+  @include tb {
+    width: $input-width-tb;
+  }
 }

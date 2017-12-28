@@ -7,4 +7,12 @@
   background-repeat: repeat;
   background-position: 50% 50%;
   padding-top: 1px;
+  @include tb {
+    width: 600px;
+    height: 575px;
+  }
+  @include sp {
+    width: 320px;
+    height: 700px;
+  }
 }

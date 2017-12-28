@@ -1,4 +1,7 @@
 #convertBtn {
   @extend .btn;
   margin-top: 15px;
+  @include tb {
+    margin-top: 50px;
+  }
 }

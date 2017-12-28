@@ -44,7 +44,7 @@ gulp.task('sass', () => {
     .pipe(plumber(plumberOption))
     .pipe(sassGlob())
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({outputStyle: 'expanded'}))
     .pipe(sourcemaps.write(`./`))
     .pipe(csscomb())
     .pipe(gulp.dest(path.dist + `css/`))

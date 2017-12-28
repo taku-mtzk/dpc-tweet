@@ -1,7 +1,10 @@
 .tweet-contents-box {
-  width: 300px;
+  width: $input-width-pc;
   height: 220px;
   border: 1px solid $gray;
   margin: 15px auto;
   background-color: #fff;
+  @include tb {
+    width: $input-width-tb;
+  }
 }

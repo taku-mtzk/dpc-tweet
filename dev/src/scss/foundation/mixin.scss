@@ -1,0 +1,11 @@
+// メディアクエリー
+@mixin tb {
+  @media screen and (min-width: $width-tb) and (max-width: ($width-pc)-1) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (min-width: $width-sp) and (max-width: ($width-tb)-1) {
+    @content;
+  }
+}
