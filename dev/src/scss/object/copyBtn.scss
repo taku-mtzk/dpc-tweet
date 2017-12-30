@@ -1,8 +1,10 @@
 #copyBtn {
- @extend .btn;
+ @extend %btn;
  margin-top: 20px;
  @include tb {
-  margin-top: 30px;
+  margin-top: 60px;
  }
- @include sp {}
+ @include sp {
+  margin-top: 25px;
+ }
 }

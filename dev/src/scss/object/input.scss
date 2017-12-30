@@ -1,12 +1,15 @@
 .input {
+  width: $input-width-pc;
   border:0;
   padding: 10px;
   color: $gray;
   border:solid 1px $gray;
-  width: $input-width-pc;
   margin:7px auto 0;
   display: block;
   @include tb {
     width: $input-width-tb;
+  }
+  @include sp {
+    width: $input-width-sp;
   }
 }

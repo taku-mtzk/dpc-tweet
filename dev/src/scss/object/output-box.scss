@@ -1,10 +1,10 @@
 .output-box {
-  @extend .c-box;
+  @extend %c-box;
   position: relative;
   @include tb {
     height: 500px;
   }
   @include sp {
-    height: 800px;
+    height: 400px;
   }
 }

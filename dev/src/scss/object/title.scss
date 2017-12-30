@@ -9,6 +9,9 @@
     margin-left: 89px;
     margin-top: 30px;
   }
+  @include sp {
+    margin-left: 14px;
+  }
 }
 
 .title:first-child {
@@ -16,13 +19,18 @@
   @include tb {
     margin-top: 60px;
   }
+  @include sp {
+    margin-top: 35px;
+  }
 }
 
 .output-box .title {
   margin: 50px 0 0;
   text-align: center;
   @include tb {
-    margin: 75px 0 0;
+    margin-top: 75px;
   }
-  @include sp {}
+  @include sp {
+    margin-top: 35px;
+  }
 }

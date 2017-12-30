@@ -209,10 +209,14 @@ select
     height: 100%;
     padding: 1px;
 
-    background-color: #343434;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px)
+@media screen and (width: 1024px)
 {
     .bg
     {
@@ -220,7 +224,6 @@ select
     }
 }
 
-.btn,
 #convertBtn,
 #copyBtn
 {
@@ -239,7 +242,24 @@ select
     background-color: transparent;
 }
 
-.btn:hover,
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    #convertBtn,
+    #copyBtn
+    {
+        padding: 20px 75px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    #convertBtn,
+    #copyBtn
+    {
+        padding: 18px 50px;
+    }
+}
+
 #convertBtn:hover,
 #copyBtn:hover
 {
@@ -247,7 +267,6 @@ select
     background-color: #193441;
 }
 
-.c-box,
 .input-box,
 .output-box
 {
@@ -264,7 +283,6 @@ select
 
 @media screen and (min-width: 768px) and (max-width: 1023px)
 {
-    .c-box,
     .input-box,
     .output-box
     {
@@ -275,12 +293,11 @@ select
 
 @media screen and (min-width: 320px) and (max-width: 767px)
 {
-    .c-box,
     .input-box,
     .output-box
     {
-        width: 320px;
-        height: 700px;
+        width: 300px;
+        height: 425px;
     }
 }
 
@@ -306,7 +323,15 @@ select
 {
     #copyBtn
     {
-        margin-top: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    #copyBtn
+    {
+        margin-top: 25px;
     }
 }
 
@@ -331,6 +356,14 @@ select
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    .input
+    {
+        width: 250px;
+    }
+}
+
 .output-box
 {
     position: relative;
@@ -348,7 +381,7 @@ select
 {
     .output-box
     {
-        height: 800px;
+        height: 400px;
     }
 }
 
@@ -374,6 +407,14 @@ select
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    .title
+    {
+        margin-left: 14px;
+    }
+}
+
 .title:first-child
 {
     margin-top: 25px;
@@ -384,6 +425,14 @@ select
     .title:first-child
     {
         margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    .title:first-child
+    {
+        margin-top: 35px;
     }
 }
 
@@ -398,7 +447,15 @@ select
 {
     .output-box .title
     {
-        margin: 75px 0 0;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    .output-box .title
+    {
+        margin-top: 35px;
     }
 }
 
@@ -420,12 +477,25 @@ select
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    .tweet-contents-box
+    {
+        width: 250px;
+    }
+}
+
 #tweetContents
 {
     font-size: 12px;
     line-height: 1.5;
 
     padding: 10px;
+}
+
+.u-hide
+{
+    display: none;
 }
 
 .u-small
